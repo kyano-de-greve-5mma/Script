@@ -75,10 +75,25 @@ header input {
     max-height: 100vh;
 }
 
+figcaption {
+    position: absolute;
+    color: white;
+    z-index: 1;
+margin-top: -20x;
+}
+
 video {
     width: 100%;
 }
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
 
+.flex-item {
+    flex: 1;
+}
 img {
     width: 100%;
     margin-bottom: 1rem;
@@ -86,3 +101,78 @@ img {
 main{
     padding: 10pt;
 }
+footer {
+    background-color: #0F1111;
+    color: #FFFFFF;
+    padding: 40px 0;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .footer-column {
+    flex-basis: 25%;
+    padding: 0 15px;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  a {
+    color: #747070;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .social-icons li:first-child {
+    margin-left: 0;
+  }
+
+  .social-icons li {
+    margin-left: 16px;
+    display: inline-block;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    color: #0F1111;
+  }
+
+  .social-icons a:hover {
+    background-color: #a78bfc;
+    color: #0F1111;
+  }
+
+  .footer-bottom {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin:auto;
+  }
