@@ -3,7 +3,7 @@
 :root {
     --bgc-02: hsl(0, 0%, 02%);
     --txt-01: #ffff;
-    --txt-02: #D6BC78;
+    --txt-02: #ffffff;
 }
 
 * {
@@ -16,53 +16,65 @@ body {
     background-color: var(--bgc-01);
     color: var(--txt-01);
     font-family: "Segoe UI", Black;
-    line-height: 1;  
-    background-image: url(/Used Pictures/);
+    line-height: 1;
+    background-image: url("achtergrond/achtergrondfestival.jpg");
+    object-fit: fill;
 }
+
 body, html {
     height: 100%;
-    x
-  }
+}
+
 .bg {
     /* The image used */
-  
+
     /* Full height */
     height: 100%;
-  
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
 /* header vormgeving */
 
 header {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     background-color: var(--bgc-02);
-    padding: 1rem ;
-    color: var(--txt-02)
+    padding: 1rem;
+    color: var(--txt-02);
 }
 
-header nav li{
+header img {
+    width: 140px;
+}
+
+header nav {
+    justify-self: end;
+    align-self: start;
+}
+
+header nav li {
     display: inline-block;
 }
 
-header img{
-    width: 5rem;
+header nav a:hover {
+    color: rgb(0, 8, 255);
+}
+header nav a{
+    color: beige;
 }
 
-header .logo {
-    justify-self: center;
-}
+
 
 h2 {
     margin-bottom: 2rem;
     margin-top: 1rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: end;
 }
 
 p {
@@ -70,7 +82,7 @@ p {
 }
 
 a {
-    text-decoration: none  ;
+    text-decoration: none;
     margin: 10px;
 }
 
@@ -84,15 +96,11 @@ header h1 {
     font-weight: 600;
 }
 
-header nav {
-    justify-self: end;
-    align-self: center;
-}
 
 /* main vormgeving */
 
 main {
-    background-image: img(UsedPictures/achtergrondfestival.jpg);
+    background-image: url(statiuc/achtergrondB.png);
     font-family: "Segoe UI", Black;
 }
 
@@ -100,36 +108,37 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin-left: 50px;
+    margin-left: 130px;
     margin-right: 50px;
 }
 
 .grid-item img {
-    width: 100%; 
-    height: 80%; 
+    width: 80%;
+    height: 80%;
     border-style: ridge;
     border-color: #D6BC78;
 }
-h2{
+
+h2 {
     text-align: center;
     padding-bottom: 50px;
     font-size: 60px;
 }
+
 footer {
     background-color: #000;
     color: #ccc;
     padding: 20px;
     text-align: center;
-  }
-  
-  .social-media a {
+}
+
+.social-media a {
     color: #ccc;
     margin-right: 10px;
     font-size: 30px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 14px;
     margin-top: 10px;
-  }
-  
+}
