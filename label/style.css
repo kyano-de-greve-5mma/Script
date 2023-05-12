@@ -25,6 +25,11 @@ body, html {
     height: 100%;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 .bg {
     /* The image used */
 
@@ -64,8 +69,9 @@ header nav li {
 header nav a:hover {
     color: rgb(0, 8, 255);
 }
-header nav a{
-    color: beige;
+
+header nav a {
+    color: rgb(255, 255, 255);
 }
 
 
@@ -113,8 +119,8 @@ main {
 }
 
 .grid-item img {
-    width: 80%;
-    height: 80%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     border-style: ridge;
     border-color: #D6BC78;
 }
