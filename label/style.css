@@ -67,7 +67,7 @@ header nav li {
 }
 
 header nav a:hover {
-    color: rgb(0, 8, 255);
+    color: rgb(241, 241, 245);
 }
 
 header nav a {
@@ -148,3 +148,32 @@ p {
     font-size: 14px;
     margin-top: 10px;
 }
+
+#Artiest {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  #Artiest .img {
+    margin-right: 10px;
+  }
+  
+  #Artiest .text {
+    margin-right: 10px;
+  }
+  
+  #Artiest .icons {
+    margin-top: 10px;
+  }
+  
+  #Artiest .icons a {
+    margin-right: 10px;
+  }
+  
+  #Artiest .icons i {
+    font-size: 20px;
+  }
+  
